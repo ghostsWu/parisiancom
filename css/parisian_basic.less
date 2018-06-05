@@ -1,0 +1,745 @@
+@col_d:#141228;
+@col_dl:#9594a6;
+@col_b:#3867b3;
+@col_r:#d6006c;
+@col_g:#b39659;
+@col_text:#333;
+
+@padd:10px;
+
+@med: 380px;
+@med-h: 550px;
+
+body
+{
+    font-size: 12px !important;
+    &>*{
+        min-width: 320px;
+    }
+
+}
+
+
+h5
+{
+    font-size: 14px;
+    font-weight: 100;
+}
+h4
+{
+    font-size: 16px;
+    font-weight: 100;
+}
+h3
+{
+    font-size: 18px;
+    font-weight: 100;
+}
+h2
+{
+    font-size: 20px;
+    font-weight: 100;
+}
+h1
+{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+a
+{
+    color: @col_text;
+}
+
+
+header,
+footer
+{
+    color: #fff;
+    border-top: 1px solid @col_r;
+    background-color: @col_d;
+    a
+    {
+        color: #fff;
+    }
+}
+
+// section
+// {
+//     margin: 3px;
+// }
+
+
+header .search
+{
+    display: none;
+}
+
+// header///////////////////////////////////////////
+
+header
+{
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 85px;
+    box-sizing: border-box;
+    padding: @padd @padd @padd @padd ;
+
+    box-shadow: 0px 5px 6px rgba(12, 11, 51, 0.5);
+
+    @media (min-width: 310px) and (max-width: @med)
+    {
+        height: 80px;
+    }
+    @media (min-width: @med) and (max-width: @med-h)
+    {
+        height: 85px;
+    }
+    .logo
+    {
+        float: left;
+
+        width: 125px;
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            width: 110px;
+        }
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            width: 122px;
+        }
+    }
+    .header_right
+    {
+        float: right;
+
+        width: 340px;
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            width: 170px;
+        }
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            width: 215px;
+        }
+    }
+}
+
+.header_right
+{
+    .search
+    {
+        position: relative;
+
+        height: 30px;
+        margin-bottom: @padd;
+
+        border: 1px solid @col_d;
+        border-right: 1px solid @col_g;
+        border-left: 1px solid @col_g;
+        border-radius: 4px;
+        background-color: #fff;
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            height: 20px;
+        }
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            height: 30px;
+        }
+    }
+    input
+    {
+        float: left;
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        text-indent: .5em;
+
+        border: 0;
+        background-color: transparent;
+    }
+    .search_but
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        float: left;
+
+        box-sizing: border-box;
+        height: 100%;
+        padding: 0 5px;
+
+        color: @col_g;
+        background-color: transparent;
+    }
+
+    .language
+    {	
+    	margin-bottom: 14px;
+    	@media (min-width: 310px) and (max-width: @med)
+        {
+            margin-bottom: 0px;
+        }
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            margin-bottom: 14px;
+        }
+
+        p{
+        	text-align: justify;
+			
+        }
+		
+
+		// 强制产生换行帮助 两端对齐；
+		p:after{
+			width: 100%;
+			height: 0;
+			display: inline-block;
+			content: "";
+
+		}
+			
+		p:before{
+			width: 22px;
+			height: 22px;
+			content: "";
+			display: inline-block;
+			background-image: url(../images/spriteicon-01.svg);
+			background-position: -84px -84px ;
+			background-repeat: no-repeat;
+			margin-right: .5em;
+			margin-bottom: -6px;
+			opacity: .8;
+		}
+
+        span
+        {
+            height: 28px;
+            padding: 7px 30px;
+            background-color: #2a294c;
+
+			@media (min-width: 310px) and (max-width: @med)
+	        {
+	            padding: 4px 2px;
+	        }
+	        @media (min-width: @med) and (max-width: @med-h)
+	        {
+	            padding: 7px 9px;
+	        }
+
+            border-radius: 2px;
+        }
+
+        .mylanguage{
+        	background-color: @col_r;
+        }
+    }
+}
+
+
+.booking
+{
+    &:after{
+        width: 100%;
+        content: "";
+        height: 0px;
+        display: block;
+        clear: both;
+    }
+    // overflow: hidden;
+    .booking_but
+    {
+        line-height: 1;
+        // padding: 7px 4px;
+
+        float: right;
+
+        width: 6.3em;
+        height: 28px;
+
+        color: #fff;
+        border-radius: 3px;
+        background-color: @col_r;
+        // height: 100%;
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            width: 3.9em;
+            // margin-top: @padd;
+            padding: 2px .5em;
+        }
+    }
+    .booking_data
+    {
+        position: relative;
+
+        float: left;
+    }
+}
+
+.booking_data
+{
+    div
+    {
+        line-height: 1;
+
+        float: left;
+
+        width: 6em;
+        padding: 5px 20px 5px 2px;
+        font-size: 18px;
+
+        text-align: center;
+
+        color: #fff;
+        border-radius: 4px;
+        background-color: @col_g;
+
+        & + div
+        {
+            padding: 5px 2px 5px 20px;
+        }
+
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            padding: 2px 22px 2px 2px;
+            width: 3em;
+            font-size: 12px;
+            & + div
+            {
+                padding: 2px 2px 2px 22px;
+            }
+        }
+
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            padding: 2px 28px 2px 4px;
+            width: 3em;
+            font-size: 12px;
+            & + div
+            {
+                padding: 2px 4px 2px 28px;
+            }
+        }
+    }
+    span
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 50px;
+        height: 50px;
+        margin-top: 0 - 50px / 2;
+        margin-left: 0 - 50px / 2;
+
+        background-image: url(../images/bookiconX2-01.png);
+        background-position: center;
+        background-size: 100% auto;
+    }
+}
+
+// footer///////////////////////////////////////////
+
+
+footer
+{
+    overflow: hidden;
+    width: 100%;
+    margin-top: @padd;
+    padding-bottom: 4em;
+
+    a
+    {
+        color: rgba(255, 255, 255, .7);
+    }
+    & > div
+    {
+        padding: 2px @padd;
+
+        border: 0 solid transparent;
+        border-bottom: 1px;
+        border-image: url(../images/border_solid_r.gif) 2 repeat;
+        // border-bottom:1px solid #fff;
+    }
+    > p
+    {
+        text-align: center;
+    }
+    & > div
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        padding: 0 @padd 0 10em;
+        @media (min-width: 310px) and (max-width: @med)
+        {
+            padding: 0 @padd 0 7em;
+        }
+        @media (min-width: @med) and (max-width: @med-h)
+        {
+            padding: 0 @padd 0 10em;
+        }
+        h4
+        {
+            position: absolute;
+            top: 0;
+            left: @padd;
+        }
+        ul
+        {
+            margin-top: 10px;
+        }
+        li
+        {
+            display: inline-block;
+        }
+    }
+    .language
+    {
+        p
+        {
+            margin-top: 10px;
+            margin-left: -9px;
+        }
+        span
+        {
+            margin: 0 6px;
+            padding: 5px 3px;
+
+            border-radius: 2px;
+        }
+        .mylanguage
+        {
+            background-color: @col_r;
+            a
+            {
+                color: #fff;
+            }
+        }
+    }
+    .site_links
+    {
+
+    	// text-align: justify;
+        li
+        {
+            min-width: 8em;
+            margin-right: 1em;
+            margin-bottom: .7em;
+
+        }
+    }
+    .phone
+    {
+        p
+        {
+            font-size: 18px;
+
+            float: left;
+
+            width: 9em;
+            margin-top: 10px;
+            // margin-left: 20px;
+            &:before
+            {
+                display: inline-block;
+
+                width: 20px;
+                height: 20px;
+                margin-right: .25em;
+                margin-bottom: -.2em;
+
+                content: '';
+
+                background-image: url(../images/spriteicon-01.svg);
+                background-repeat: no-repeat;
+                background-position: -47px -47px;
+                // background-color: #222;
+            }
+        }
+    }
+    .book
+    {
+        border: 0;
+    }
+    .social_but
+    {
+        // width: 200px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        padding: 0;
+        text-align: center;
+
+        border: 0;
+        li
+        {
+            // float: left;
+
+            padding: 5px;
+        }
+        a
+        {
+            display: block;
+
+            width: 30px;
+            height: 30px;
+
+            opacity: .5;
+            background-image: url(../images/spriteicon-01.svg);
+            background-repeat: no-repeat;
+            // background-color: #ccc;
+        }
+        .fackbook a
+        {
+            background-position: 0 (-157px - 0 * 30);
+        }
+        .twitter a
+        {
+            background-position: 0 (-157px - 1 * 30);
+        }
+        .weixin a
+        {
+            background-position: 0 (-157px - 2 * 30);
+        }
+        .weibo a
+        {
+            background-position: 0 (-157px - 3 * 30);
+        }
+        .email a
+        {
+            background-position: 0 (-157px - 4 * 30);
+        }
+    }
+}
+
+
+
+
+@fs_h:58px;
+
+.float_sales{
+
+	width:100%;
+	// height: 58px;
+	position: fixed;
+	z-index: 999;
+	bottom: 0px;
+	left: 0px;
+	background-color: @col_d;
+	color: #fff;
+	box-shadow: 0px -3px 3px rgba(17, 17, 17, 0.2);
+	padding: 0 60px 0 19px;
+	box-sizing: border-box;
+
+    
+	
+	a{color: #fff;}
+
+    span{
+        display: inline-block;
+    }
+
+	&>div{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.title,.back,.next,.close{
+		position: absolute;
+		// display: none;
+	}
+
+	.sales_list{
+		background-color: #363557;
+		overflow: hidden;
+	}
+	
+	// .sales_list_control{
+	// 	width: 300%;
+	// }
+
+	.title{
+		width: 2em;
+		height: 2em;
+		left: 0px;
+		top: 50%;
+		margin: 0;
+		margin-top: -1em;
+		margin-left: .5em;
+		line-height: 1;
+        display: none;
+	}
+
+	.back,.next{
+		width: 15px;
+		height: 28px;
+		background-image: url(../images/spriteicon-01.svg);
+		background-repeat: no-repeat;
+		top: 50%;
+		margin-top:  -28px /2;
+		// background-color: #111;
+	}
+
+	.back{left: 2px;background-position: -11px -5px;}
+	.next{right: 3.7em;background-position: -49px -5px;}
+	
+	.close{
+		background-image: url(../images/spriteicon-01.svg);
+		background-repeat: no-repeat;
+		background-position: -6px -45px;
+		opacity: .7;
+
+		width: 20px;
+		height: 20px;
+		right: .8em;
+		top: 50%;
+        padding: 3px;
+		margin-top: (-20px - 6) / 2 ;
+        border-radius: 50%;
+
+        &:hover{
+            background-color: @col_r;
+            opacity: 1;
+        }
+	}
+	
+}
+
+// .sales_list_control{
+// 	li{
+// 		width: 33.3333%;
+// 	}
+// }
+
+.sales_list{
+
+	li{
+		float: left;
+		height: 100%;
+		padding: 6px;
+		box-sizing: border-box;
+	}
+	p{
+		margin: 0;
+		line-height: 1.5em;
+	}
+
+	
+	div{
+		background-color: @col_r;
+		width: 2em;
+		height: 2em;
+		text-align: center;
+		border-radius: 2px;
+		line-height: 1;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 2px;
+		float: left;
+		margin-right: .5em;
+	}
+
+}
+
+
+// header 修整
+
+header{
+    .language{display: none;}
+    transition-property: height;
+    transition-duration: .3s;
+    // transition-timing-function: cubic-bezier(0.53, -0.31, 0.4, 1.39);
+    transition-delay: .1s;
+
+    .logo{
+       transition-property: width;
+        transition-duration: .3s;
+        // transition-timing-function: cubic-bezier(0.53, -0.31, 0.4, 1.39);
+        transition-delay: .1s;
+    }
+
+    .booking{
+        margin-top: 20px;
+        display: none;
+    }
+
+    .easy_book{
+        width: 150px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px / 2;
+        right: @padd / 2;
+        box-sizing: border-box;
+        border: 1px solid @col_g;
+        border-radius: 2px;
+        text-align: center;
+        line-height: 30px;
+        padding-right: 3px;
+
+        &:hover{
+            background-color: @col_dl;
+        }
+        
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        &:before{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            display: block;
+            content: "";
+            right: 0;
+            top: 50%;
+            margin-top: -20px /2;
+            background-image: url(../images/spriteicon-01.svg);
+            background-repeat: no-repeat;
+            background-position: -39px -114px;
+        }
+
+    }
+}
+	
+.scroll_simple{
+    height: 50px;
+    padding: 5px;
+    background-color: rgba(20, 18, 40, 0.95);
+    // border-bottom: 1px solid @col_g;
+    
+
+    .logo{
+        width: 72px;
+    }
+
+    & ~ .banner_home{
+        // padding-top: 50px;
+    }
+}
+	
+	
+
+
+
+
+
+
+
+
+
+

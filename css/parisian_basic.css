@@ -1,0 +1,544 @@
+body {
+  font-size: 12px !important;
+}
+body > * {
+  min-width: 320px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 100;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 100;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 100;
+}
+a {
+  color: #333333;
+}
+header,
+footer {
+  color: #fff;
+  border-top: 1px solid #d6006c;
+  background-color: #141228;
+}
+header a,
+footer a {
+  color: #fff;
+}
+header .search {
+  display: none;
+}
+header {
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 85px;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 5px 6px rgba(12, 11, 51, 0.5);
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  header {
+    height: 80px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  header {
+    height: 85px;
+  }
+}
+header .logo {
+  float: left;
+  width: 125px;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  header .logo {
+    width: 110px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  header .logo {
+    width: 122px;
+  }
+}
+header .header_right {
+  float: right;
+  width: 340px;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  header .header_right {
+    width: 170px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  header .header_right {
+    width: 215px;
+  }
+}
+.header_right .search {
+  position: relative;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #141228;
+  border-right: 1px solid #b39659;
+  border-left: 1px solid #b39659;
+  border-radius: 4px;
+  background-color: #fff;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  .header_right .search {
+    height: 20px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  .header_right .search {
+    height: 30px;
+  }
+}
+.header_right input {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-indent: .5em;
+  border: 0;
+  background-color: transparent;
+}
+.header_right .search_but {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 5px;
+  color: #b39659;
+  background-color: transparent;
+}
+.header_right .language {
+  margin-bottom: 14px;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  .header_right .language {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  .header_right .language {
+    margin-bottom: 14px;
+  }
+}
+.header_right .language p {
+  text-align: justify;
+}
+.header_right .language p:after {
+  width: 100%;
+  height: 0;
+  display: inline-block;
+  content: "";
+}
+.header_right .language p:before {
+  width: 22px;
+  height: 22px;
+  content: "";
+  display: inline-block;
+  background-image: url(../images/spriteicon-01.svg);
+  background-position: -84px -84px;
+  background-repeat: no-repeat;
+  margin-right: .5em;
+  margin-bottom: -6px;
+  opacity: .8;
+}
+.header_right .language span {
+  height: 28px;
+  padding: 7px 30px;
+  background-color: #2a294c;
+  border-radius: 2px;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  .header_right .language span {
+    padding: 4px 2px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  .header_right .language span {
+    padding: 7px 9px;
+  }
+}
+.header_right .language .mylanguage {
+  background-color: #d6006c;
+}
+.booking:after {
+  width: 100%;
+  content: "";
+  height: 0px;
+  display: block;
+  clear: both;
+}
+.booking .booking_but {
+  line-height: 1;
+  float: right;
+  width: 6.3em;
+  height: 28px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #d6006c;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  .booking .booking_but {
+    width: 3.9em;
+    padding: 2px .5em;
+  }
+}
+.booking .booking_data {
+  position: relative;
+  float: left;
+}
+.booking_data div {
+  line-height: 1;
+  float: left;
+  width: 6em;
+  padding: 5px 20px 5px 2px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #b39659;
+}
+.booking_data div + div {
+  padding: 5px 2px 5px 20px;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  .booking_data div {
+    padding: 2px 22px 2px 2px;
+    width: 3em;
+    font-size: 12px;
+  }
+  .booking_data div + div {
+    padding: 2px 2px 2px 22px;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  .booking_data div {
+    padding: 2px 28px 2px 4px;
+    width: 3em;
+    font-size: 12px;
+  }
+  .booking_data div + div {
+    padding: 2px 4px 2px 28px;
+  }
+}
+.booking_data span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-image: url(../images/bookiconX2-01.png);
+  background-position: center;
+  background-size: 100% auto;
+}
+footer {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 4em;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer > div {
+  padding: 2px 10px;
+  border: 0 solid transparent;
+  border-bottom: 1px;
+  -webkit-border-image: url(../images/border_solid_r.gif) 2 repeat;
+       -o-border-image: url(../images/border_solid_r.gif) 2 repeat;
+          border-image: url(../images/border_solid_r.gif) 2 repeat;
+}
+footer > p {
+  text-align: center;
+}
+footer > div {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px 0 10em;
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  footer > div {
+    padding: 0 10px 0 7em;
+  }
+}
+@media (min-width: 380px) and (max-width: 550px) {
+  footer > div {
+    padding: 0 10px 0 10em;
+  }
+}
+footer > div h4 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+footer > div ul {
+  margin-top: 10px;
+}
+footer > div li {
+  display: inline-block;
+}
+footer .language p {
+  margin-top: 10px;
+  margin-left: -9px;
+}
+footer .language span {
+  margin: 0 6px;
+  padding: 5px 3px;
+  border-radius: 2px;
+}
+footer .language .mylanguage {
+  background-color: #d6006c;
+}
+footer .language .mylanguage a {
+  color: #fff;
+}
+footer .site_links li {
+  min-width: 8em;
+  margin-right: 1em;
+  margin-bottom: .7em;
+}
+footer .phone p {
+  font-size: 18px;
+  float: left;
+  width: 9em;
+  margin-top: 10px;
+}
+footer .phone p:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: .25em;
+  margin-bottom: -0.2em;
+  content: '';
+  background-image: url(../images/spriteicon-01.svg);
+  background-repeat: no-repeat;
+  background-position: -47px -47px;
+}
+footer .book {
+  border: 0;
+}
+footer .social_but {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0;
+  text-align: center;
+  border: 0;
+}
+footer .social_but li {
+  padding: 5px;
+}
+footer .social_but a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  background-image: url(../images/spriteicon-01.svg);
+  background-repeat: no-repeat;
+}
+footer .social_but .fackbook a {
+  background-position: 0 -157px;
+}
+footer .social_but .twitter a {
+  background-position: 0 -187px;
+}
+footer .social_but .weixin a {
+  background-position: 0 -217px;
+}
+footer .social_but .weibo a {
+  background-position: 0 -247px;
+}
+footer .social_but .email a {
+  background-position: 0 -277px;
+}
+.float_sales {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  bottom: 0px;
+  left: 0px;
+  background-color: #141228;
+  color: #fff;
+  box-shadow: 0px -3px 3px rgba(17, 17, 17, 0.2);
+  padding: 0 60px 0 19px;
+  box-sizing: border-box;
+}
+.float_sales a {
+  color: #fff;
+}
+.float_sales span {
+  display: inline-block;
+}
+.float_sales > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.float_sales .title,
+.float_sales .back,
+.float_sales .next,
+.float_sales .close {
+  position: absolute;
+}
+.float_sales .sales_list {
+  background-color: #363557;
+  overflow: hidden;
+}
+.float_sales .title {
+  width: 2em;
+  height: 2em;
+  left: 0px;
+  top: 50%;
+  margin: 0;
+  margin-top: -1em;
+  margin-left: .5em;
+  line-height: 1;
+  display: none;
+}
+.float_sales .back,
+.float_sales .next {
+  width: 15px;
+  height: 28px;
+  background-image: url(../images/spriteicon-01.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  margin-top: -14px;
+}
+.float_sales .back {
+  left: 2px;
+  background-position: -11px -5px;
+}
+.float_sales .next {
+  right: 3.7em;
+  background-position: -49px -5px;
+}
+.float_sales .close {
+  background-image: url(../images/spriteicon-01.svg);
+  background-repeat: no-repeat;
+  background-position: -6px -45px;
+  opacity: .7;
+  width: 20px;
+  height: 20px;
+  right: .8em;
+  top: 50%;
+  padding: 3px;
+  margin-top: -13px;
+  border-radius: 50%;
+}
+.float_sales .close:hover {
+  background-color: #d6006c;
+  opacity: 1;
+}
+.sales_list li {
+  float: left;
+  height: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.sales_list p {
+  margin: 0;
+  line-height: 1.5em;
+}
+.sales_list div {
+  background-color: #d6006c;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2px;
+  float: left;
+  margin-right: .5em;
+}
+header {
+  -webkit-transition-property: height;
+          transition-property: height;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+header .language {
+  display: none;
+}
+header .logo {
+  -webkit-transition-property: width;
+          transition-property: width;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+header .booking {
+  margin-top: 20px;
+  display: none;
+}
+header .easy_book {
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  right: 5px;
+  box-sizing: border-box;
+  border: 1px solid #b39659;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 30px;
+  padding-right: 3px;
+}
+header .easy_book:hover {
+  background-color: #9594a6;
+}
+header .easy_book a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header .easy_book:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: "";
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url(../images/spriteicon-01.svg);
+  background-repeat: no-repeat;
+  background-position: -39px -114px;
+}
+.scroll_simple {
+  height: 50px;
+  padding: 5px;
+  background-color: rgba(20, 18, 40, 0.95);
+}
+.scroll_simple .logo {
+  width: 72px;
+}

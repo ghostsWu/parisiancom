@@ -1,0 +1,145 @@
+.fs_close_anima {
+  -webkit-animation-name: fs_close_anima;
+          animation-name: fs_close_anima;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: cubic-bezier(0.85, -0.37, 0.2, 1.32);
+          animation-timing-function: cubic-bezier(0.85, -0.37, 0.2, 1.32);
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+@-webkit-keyframes fs_close_anima {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+            transform: perspective(400px) rotateX(90deg);
+  }
+}
+@keyframes fs_close_anima {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+            transform: perspective(400px) rotateX(90deg);
+  }
+}
+.show_anima {
+  -webkit-animation-name: show_anima;
+          animation-name: show_anima;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  opacity: 0;
+}
+@-webkit-keyframes show_anima {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+    opacity: 1;
+  }
+}
+@keyframes show_anima {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hide_anima {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+    opacity: 0;
+  }
+}
+@keyframes hide_anima {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(0deg) translateZ(1px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+            transform: perspective(1400px) rotateX(-30deg) translateZ(1px);
+    opacity: 0;
+  }
+}
+.but_click_anima {
+  -webkit-animation-name: but_click_anima;
+          animation-name: but_click_anima;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes but_click_anima {
+  0% {
+    box-shadow: 0px 0px 0px #d7006d;
+  }
+  20% {
+    box-shadow: 0px 0px 13px #d7006d;
+  }
+  100% {
+    box-shadow: 0px 0px 0px #d7006d;
+  }
+}
+@keyframes but_click_anima {
+  0% {
+    box-shadow: 0px 0px 0px #d7006d;
+  }
+  20% {
+    box-shadow: 0px 0px 13px #d7006d;
+  }
+  100% {
+    box-shadow: 0px 0px 0px #d7006d;
+  }
+}
+.sales_list_control {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.67, 0.21, 0.4, 1.27) 0s;
+          transition: transform 0.2s cubic-bezier(0.67, 0.21, 0.4, 1.27) 0s;
+}
